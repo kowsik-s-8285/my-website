@@ -5,13 +5,11 @@
     <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
 
     <script>
-      debugger
       let startTime = new Date();
       console.log(startTime);
       console.log(`${(new Date() - startTime)/1000}s start`);
 
         async function pageLoad(newdealdata) {
-          debugger
           console.log(`${(new Date() - startTime) / 1000}s pageLoad Initalized`);
           document.querySelector("h1").innerText = `Performance Tester loaded in: ${(new Date() - startTime) / 1000}s`;
         }
